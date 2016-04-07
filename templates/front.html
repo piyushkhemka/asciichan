@@ -20,9 +20,18 @@
 			</label>
 
 			<div class = "error"> {{error}} </div>
-			
+
 			<input type="submit">
 		</form>
+
+		<hr>
+		{% for x in arts %}
+			<div class = "art">
+				<div class = "art-title">{{x.title}}</div>
+				<pre class="art-body">{{x.art}}</pre>
+			</div>
+		<hr>
+		{% endfor %}
 	</body>
 
 </html>
