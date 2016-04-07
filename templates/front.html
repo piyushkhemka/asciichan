@@ -5,6 +5,63 @@
 		<title> Ascii Chan </title>
 	</head>
 
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 15px;
+		}
+
+		.error {
+			color: red;
+		}
+
+		label {
+			display :block;
+			font-size : 25px;
+		}
+
+		input[type=submit] {
+			font-size: 28px;
+		}
+
+		input[type=text] {
+			width: 400px;
+			font-size: 22px;
+			padding: 2px;
+		}
+
+		textarea {
+			width: 500px;
+			height: 250px;
+			font-size:18px;
+			font-family: monospace;
+		}
+
+		hr {
+			margin: 20px auto;
+		}
+
+		.art + .art {
+			margin-top: 20px;
+		}
+
+		.art-title {
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.art-body {
+			margin: 0;
+			font-size: 18px;
+		}
+
+
+
+
+	</style>
+
 	<body>
 		<h1> ascii </h1>
 
@@ -16,7 +73,7 @@
 
 			<label>
 				<div>art</div>
-				<textarea name="art">{{art}} </textarea>
+				<textarea name="art">{{art}}</textarea>
 			</label>
 
 			<div class = "error"> {{error}} </div>
